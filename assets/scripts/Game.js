@@ -238,6 +238,7 @@ cc.Class({
 
     onReadyToStart(match) {
         console.log(match);
+        celerx.start();
         if (match) {
             const players = _.keyBy(match.players, "index");
             const youInfo = match.currentPlayer;
